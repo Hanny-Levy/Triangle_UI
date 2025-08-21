@@ -20,8 +20,9 @@ export default function InputForm({ pts, setPts, onShow }) {
                     <div key={k} style={box}>
                         <div style={{ fontSize: 18, fontWeight: 500, marginBottom: 12 }}>נקודה {k}</div>
                         <div style={{ display: "flex", gap: 12 }}>
-                            <LabeledInput label="X" value={pts[k].x} onChange={(v) => set(k, "x", v)} />
                             <LabeledInput label="Y" value={pts[k].y} onChange={(v) => set(k, "y", v)} />
+                            <LabeledInput label="X" value={pts[k].x} onChange={(v) => set(k, "x", v)} />
+
                         </div>
                     </div>
                 ))}
